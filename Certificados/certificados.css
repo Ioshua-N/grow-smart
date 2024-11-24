@@ -25,9 +25,9 @@ body
     transition: all 0.5s ease;
 }
 
-.main-content
+.main
 {
-    
+    width: calc(100vw - 260px);
 }
 
 .top-bar

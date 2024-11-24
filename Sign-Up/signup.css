@@ -98,6 +98,11 @@
     margin-left: 10px;
 }
 
+.a 
+{
+    margin: 0 !important;
+}
+
 .forms
 {
     display: flex;
