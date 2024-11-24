@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GrowSmart Login</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="/Login/login.css">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Log In</title>
 </head>
+
 <body>
-    <div class="container">
+    <div class="main">
 
         <div class="left-section">
-            <div class = "left-section-content">
-                <div class="logo">
-                    <h1>GS</h1>
-                    <h2>GrowSmart</h2>
-                </div>
-    
-                <div class="text">
-                    <h2>Building the Future...</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
+
+            <div class="logo">
+                <div class="logo-icon">GS</div>
+                <div class="logo-text">GrowSmart</div>
             </div>
+
+            <div class="text">
+                <h2 class="title">Building the Future...</h2>
+                <p class="text">Texto aleatório</p>
+            </div>
+
         </div>
 
         <div class="right-section">
-            <div class="form-container">
-                <div class = "form-container-background">
-                    <h3>Let's Get You Started</h3>
-                <form>
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" placeholder="Johnson Doe" required>
-                    
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="johnsondoe@hotmail.com" required>
-                    
-                    <label for="password">Password</label>
+
+            <div>
+                <p class="subtitle">WELCOME BACK</p>
+                <p class="title">Log In to Yout Account</p>
+
+                <form class="forms">
+                    <label>Email</label>
+                    <input type="email" placeholder="example@example.com" required>
+
+                    <label>Password</label>
                     <div class="password-container">
                         <input type="password" id="password" placeholder="********" required>
                         <span class="show-password">👁️</span>
                     </div>
 
-                    <button type="submit">Get Started</button>
+                    <a href="/Sign-Up/signup.html"><button class="login-btn">Log in</button></a>
                 </form>
-                <div class="social-login">
-                    <p>or</p>
-                    <button class="google-btn">Sign up with Google</button>
-                    <button class="facebook-btn">Sign up with Facebook</button>
-                </div>
-                <p>Already have an account? <a href="#">Login here</a></p>
-                </div>
-                
+                <div class="p">or</div>
+                <div class="social-login"></div>
+                <a href="/Sign-Up/signup.html"><button class="google-btn">Log in with Google</button></a>
+                <a href="/Sign-Up/signup.html"><button class="facebook-btn">Log in with Facebook</button></a>
             </div>
-        </div>
 
+            <div class="p">New User? <a href="../Sign-Up/signup.html">SIGN UP HERE</a></div>
+        </div>
     </div>
 </body>
+
 </html>
