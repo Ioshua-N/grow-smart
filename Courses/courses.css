@@ -1,0 +1,135 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #05570D;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.logo-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 20px;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.nav-links li {
+    margin-bottom: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background: #038C14;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    margin-left: 250px; /* Espaço para a sidebar */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #05570D;
+}
+
+.add-course {
+    background: #05570D;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-course:hover {
+    background: #038C14;
+}
+
+/* Vídeos - Cards */
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.video-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(300px - 10px); /* Responsividade dos cards */
+    max-width: 300px; /* Largura máxima dos cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-card video {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.video-card h2 {
+    font-size: 18px;
+    color: #05570D;
+    margin-bottom: 10px;
+}
+
+.video-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
