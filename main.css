@@ -13,21 +13,27 @@ a
   text-decoration: none;
 }
 
-.sidebar{
-    margin: 1.5%;
-    border-radius: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 95%;
-    width: 260px;
-    background: #05570D;
-    z-index: 100;
-    transition: all 0.5s ease;
-}
-.sidebar.close{
+.sidebar
+{
+  height: 95%;
   width: 78px;
+
+  margin: 1.5%;
+  padding-top: 0.75%;
+
+  border-radius: 20px;
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  z-index: 100;
+  
+  background: #05570D;
+
+  transition: all 0.5s ease;
 }
+
 .sidebar .logo-details{
   height: 60px;
   width: 100%;
