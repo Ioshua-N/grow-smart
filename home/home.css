@@ -264,6 +264,14 @@
     border-radius: 15px;
 }
 
+.timeCurso{
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeCurso p{
+    margin-left: 10px;
+}
 
 
 
