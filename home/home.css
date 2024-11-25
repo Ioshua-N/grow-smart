@@ -1,0 +1,269 @@
+.homePage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+.cardWelcome {
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+    background-color: #F5F5F7;
+    border-radius: 15px;
+}
+
+.TopHome {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /* align-items: center; */
+    display: flex
+}
+
+.TopLeft {
+    min-width: 520px;
+}
+
+.textWelcome {
+    display: flex;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textWelcome h1 {
+    font-size: 20px;
+}
+
+.textWelcome p {
+    font-size: 15px;
+}
+
+.svgHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.buttonCursos {
+    appearance: none;
+    background-color: #05570D;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.buttonCursos:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+}
+
+.buttonCursos:hover {
+    background-color: #2c974b;
+}
+
+.buttonCursos:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+}
+
+.buttonCursos:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+}
+
+.buttonCursos:active {
+    background-color: #298e46;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.textCursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lastCurso {
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-around;
+    margin-top: 5%;
+    align-items: center;
+    background-color: #F5F5F7;
+}
+
+.titloCursos {
+    font-size: 15px;
+}
+
+.SubtitloCursos {
+    font-size: 12px;
+}
+
+.GeralProgresso {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cursoCompleto {
+    display: flex;
+    border-radius: 15px;
+    padding: 10%;
+    margin-right: 4%;
+    align-items: center;
+    background-color: #F5F5F7;
+    min-height: 100px;
+    min-width: 200px;
+}
+
+.cursoCompleto p {
+    color: #05570D;
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: 10%;
+}
+
+.cursoProgresso {
+    display: flex;
+    border-radius: 15px;
+    padding: 10%;
+    align-items: center;
+    background-color: #F5F5F7;
+    min-height: 100px;
+    min-width: 200px;
+}
+
+.cursoProgresso p {
+    color: #05570D;
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: 10%;
+}
+
+.premium {
+    display: flex;
+    border-radius: 15px;
+    margin-top: 5%;
+    padding: 10%;
+    align-items: center;
+    background-color: #F5F5F7;
+    min-height: 100px;
+    min-width: 250px;
+}
+
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 570px;
+    background: #e5e5e5;
+    box-shadow: 0 48px 80px -32px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.input {
+    position: absolute;
+    opacity: 0;
+}
+
+.label {
+    width: 100%;
+    padding: 20px 30px;
+    background: #e5e5e5;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    color: #7f7f7f;
+    transition: background 0.1s, color 0.1s;
+}
+
+.label:hover {
+    background: #d8d8d8;
+}
+
+.label:active {
+    background: #ccc;
+}
+
+.input:focus+.label {
+    z-index: 1;
+}
+
+.input:checked+.label {
+    background: #fff;
+    color: #000;
+}
+
+@media (min-width: 600px) {
+    .label {
+        width: auto;
+    }
+}
+
+.panel {
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+    display: none;
+    padding: 20px 30px 30px;
+    background: #fff;
+}
+
+@media (min-width: 600px) {
+    .panel {
+        order: 99;
+    }
+}
+
+.input:checked+.label+.panel {
+    display: block;
+}
+
+.MidMenu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.titleTopCursos {
+    color: #05570D;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 3%;
+}
+
+.allCursoTabs {
+    border-radius: 15px;
+}
+
+
+
+
