@@ -5,21 +5,21 @@
     box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    font-family: Arial, sans-serif;
-    background-color: white;
-    height: 100vh;
-    overflow: hidden;
-}
-
 /* Conteúdo Principal */
-.main-content {
-    margin-left: calc(78px + 3%);
-    flex: 1;
+.main-content 
+{
     display: flex;
+
     flex-direction: column;
-    padding: 20px;
+
+    height: 100vh;
+    width: calc(100vw - 78px - 3%);
+
+    margin-left: calc(78px + 3%);
+
+    padding: 50px 50px 50px 25px;
+
+    box-sizing: border-box;
     overflow-y: auto;
 }
 
@@ -30,9 +30,14 @@ header {
     margin-bottom: 20px;
 }
 
-header h1 {
-    font-size: 24px;
+header h2 
+{
     color: #05570D;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  margin: 20px;
 }
 
 .add-course {
