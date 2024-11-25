@@ -247,7 +247,7 @@
 
 .MidMenu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     align-items: center;
     margin-top: 2%;
@@ -264,11 +264,19 @@
     border-radius: 15px;
 }
 
-.timeCurso{
+.timeCurso {
     display: flex;
     justify-content: space-between;
 }
 
-.timeCurso p{
+.timeCurso p {
     margin-left: 10px;
+}
+
+.carouselHome{
+    height: 100%;
+    width: 458px;
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
 }
