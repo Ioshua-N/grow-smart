@@ -109,6 +109,11 @@
     margin-bottom: 10px;
 }
 
+.modulo .title
+{
+    color: white
+}
+
 .status
 {
     display: flex;
