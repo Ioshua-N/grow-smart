@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-
-    <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="certificados.css">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Certificados</title>
+    <link rel="stylesheet" href="class.css">
+    <link rel="stylesheet" href="../main.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Aula</title>
 </head>
 
 <body>
@@ -126,43 +125,26 @@
         </ul>
     </div>
     <div class="main">
-        <div class="title">Certificados</div>
-        <div class="certificados-container">
-            <div class="certificado">
-                <div class="certificado-left">
-                    <div class="certificado-icon"></div>
-                    <div class="certificado-text">
-                        <div>
-                            <h2>Titulo do certificado</h2>
-                        </div>
-                        <div>by Pessoa que fez</div>
-                    </div>
-                </div>
-
-                <div class="certificado-right">
-                    <div class="pie" style="--p:50;--c:#05570D;--b:5px">50%</div>
-                    </svg>
-                    <a class="a" download="Certificado" href="certificadoTeste.pdf"><button class="acessar-btn" role="button">Acessar</button></a>
-                </div>
+        <div class="left-section">
+            <div class="top-bar">
+                <a class="a" download="Certificado" href="certificadoTeste.pdf"><button class="back-btn" role="button">Voltar</button></a>
+                <div class="title">Nome do Curso</div>
             </div>
-            <div class="certificado">
-                <div class="certificado-left">
-                    <div class="certificado-icon"></div>
-                    <div class="certificado-text">
-                        <div>
-                            <h2>Titulo do certificado</h2>
-                        </div>
-                        <div>by Pessoa que fez</div>
-                    </div>
-                </div>
-
-                <div class="certificado-right">
-                    <div class="pie" style="--p:50;--c:#05570D;--b:5px">50%</div>
-                    </svg>
-                    <a class="a" download="Certificado" href="certificadoTeste.pdf"><button class="acessar-btn" role="button">Acessar</button></a>
+            <video class="video" src="video.mp4" controls></video>
+            <div class="class-title">1 - Modulo Inicial</div>
+            <div>Descrição genérica da aula que o professor vai fazer e nós não vamos porque esse é um texto de exemplo que foi feito apenas para a demonstração</div>
+        </div>
+        <div class="right-section">
+            <input class="search-bar" type="text">
+            <div class="modulo">
+                <div class="status"><i class='bx bxs-check-circle'></i></div>
+                <div class="text">
+                    <div class="title">Modulo 1</div>
+                    <div class="time">5:00</div>
                 </div>
             </div>
         </div>
+    </div>
 </body>
 
 </html>
