@@ -105,6 +105,8 @@
     background-color: #05570d;
 
     padding: 10px 15px;
+
+    margin-bottom: 10px;
 }
 
 .status
@@ -125,6 +127,7 @@
 
 .title
 {
+    color: #05570d;
     font-size: 20px;
 }
 
