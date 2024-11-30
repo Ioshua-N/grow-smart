@@ -335,3 +335,28 @@ a
     --p: 0;
   }
 }
+
+.logo-icon
+{
+    display: flex;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 10px;
+
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    background-color: white;
+    color: #05570D;
+
+    font-size: 25px;
+}
+
+.logo-details {
+    justify-content: center;
+    align-items: center;
+}
