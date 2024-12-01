@@ -2,125 +2,133 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="class.css">
-    <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="class.css">
+  <link rel="stylesheet" href="../main.css">
 
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Aula</title>
+  <title>Aula</title>
 </head>
 
 <body>
-    <div class="sidebar close">
-        <div class="logo-details">
-          <div class="logo-icon">GS</div>
-        </div>
-        <ul class="nav-links">
-          <li>
-            <div class="iocn-link">
-              <a href="../home/home.html">
-                <i class='bx bxs-home'></i>
-                <span class="link_name"></span>
-              </a>
-            </div>
-            <ul class="sub-menu">
-              <li><a class="link_name" href="#">Home</a></li>
-            </ul>
-          </li>
-          <li>
-            <div class="iocn-link">
-              <a href="../Courses/courses.html">
-                <i class='bx bx-book-reader'></i>
-                <span class="link_name"></span>
-              </a>
-              <i class='bx bxs-chevron-down arrow'></i>
-            </div>
-            <ul class="sub-menu">
-              <li><a class="link_name" href="#">Cursos</a></li>
-            </ul>
-          </li>
-          <li>
-            <div class="iocn-link">
-              <a href="#">
-                <i class='bx bxs-user'></i>
-                <span class="link_name"></span>
-              </a>
-              <i class='bx bxs-chevron-down arrow'></i>
-            </div>
-            <ul class="sub-menu">
-              <li><a class="link_name" href="#">Usuário</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="../Certificados/certificados.html">
-              <i class='bx bxs-bookmarks'></i>
-              <span class="link_name"></span>
-            </a>
-            <ul class="sub-menu blank">
-              <li><a class="link_name" href="#">Certificados</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">
-              <i class='bx bx-cog'></i>
-              <span class="link_name">Chart</span>
-            </a>
-            <ul class="sub-menu blank">
-              <li><a class="link_name" href="#">Configurações</a></li>
-            </ul>
-          </li>
-          <li>
-            <div class="iocn-link">
-              <a href="../index.html">
-                <i class='bx bx-exit'></i>
-                <span class="link_name"></span>
-              </a>
-              <i class='bx bxs-chevron-down arrow'></i>
-            </div>
-            <ul class="sub-menu">
-              <li><a class="link_name" href="#">Sair</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    <div class="main">
-        <div class="left-section">
-            <div class="top-bar">
-                <a class="a" href="../home/home.html"><button class="back-btn" role="button">Voltar</button></a>
-                <div class="title">Nome do Curso</div>
-            </div>
-            <video class="video" src="video.mp4" controls></video>
-            <div class="class-title">1 - Modulo Inicial</div>
-            <div>Descrição genérica da aula que o professor vai fazer e nós não vamos porque esse é um texto de exemplo que foi feito apenas para a demonstração</div>
-        </div>
-        <div class="right-section">
-            <input class="search-bar" type="text" placeholder="Pesquisar Modulos...">
-            <div class="modulo">
-                <div class="status"><i class='bx bxs-check-circle'></i></div>
-                <div class="text">
-                    <div class="title">Teste Diagnóstico</div>
-                    <div class="time">Formulário</div>
-                </div>
-            </div>
-            <div class="modulo">
-                <div class="status"><i class='bx bxs-check-circle'></i></div>
-                <div class="text">
-                    <div class="title">Modulo 1</div>
-                    <div class="time">5:00</div>
-                </div>
-            </div>
-            <div class="modulo">
-                <div class="status"><i class='bx bxs-check-circle'></i></div>
-                <div class="text">
-                    <div class="title">Avaliação Somativa</div>
-                    <div class="time">Formulário</div>
-                </div>
-            </div>
-        </div>
+
+  <div class="menu-toggle" onclick="toggleSidebar()">
+    <i class="bx bx-menu"></i>
+  </div>
+
+  <div class="sidebar close">
+    <div class="logo-details">
+      <div class="logo-icon">GS</div>
     </div>
+    <ul class="nav-links">
+      <li>
+        <div class="iocn-link">
+          <a href="../home/home.html">
+            <i class='bx bxs-home'></i>
+            <span class="link_name"></span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Home</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="../Courses/courses.html">
+            <i class='bx bx-book-reader'></i>
+            <span class="link_name"></span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Cursos</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bxs-user'></i>
+            <span class="link_name"></span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Usuário</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../Certificados/certificados.html">
+          <i class='bx bxs-bookmarks'></i>
+          <span class="link_name"></span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Certificados</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog'></i>
+          <span class="link_name">Chart</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Configurações</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="../index.html">
+            <i class='bx bx-exit'></i>
+            <span class="link_name"></span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Sair</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="main">
+    <div class="left-section">
+      <div class="top-bar">
+        <a class="a" href="../home/home.html"><button class="back-btn" role="button">Voltar</button></a>
+        <div class="title">Nome do Curso</div>
+      </div>
+      <!-- <video class="video" src="https://youtu.be/8GhDMjGPhyE?si=gaeLObhSEftfRHSE" controls></video> -->
+      <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8GhDMjGPhyE?si=YTGg9LyeiPeMT2Su" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="class-title">1 - Modulo Inicial</div>
+      <div>Descrição genérica da aula que o professor vai fazer e nós não vamos porque esse é um texto de exemplo que
+        foi feito apenas para a demonstração</div>
+    </div>
+    <div class="right-section">
+      <input class="search-bar" type="text" placeholder="Pesquisar Modulos...">
+      <div class="modulo">
+        <div class="status"><i class='bx bxs-check-circle'></i></div>
+        <div class="text">
+          <div class="title">Teste Diagnóstico</div>
+          <div class="time">Formulário</div>
+        </div>
+      </div>
+      <div class="modulo">
+        <div class="status"><i class='bx bxs-check-circle'></i></div>
+        <div class="text">
+          <div class="title">Modulo 1</div>
+          <div class="time">5:00</div>
+        </div>
+      </div>
+      <div class="modulo">
+        <div class="status"><i class='bx bxs-check-circle'></i></div>
+        <div class="text">
+          <div class="title">Avaliação Somativa</div>
+          <div class="time">Formulário</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>

@@ -360,3 +360,74 @@ a
     justify-content: center;
     align-items: center;
 }
+
+
+.menu-toggle{
+  display: none;
+}
+/* CSS Responsivo */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 0;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background: rgba(5, 87, 13, 0.95);
+    overflow: hidden;
+    z-index: 1000;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .sidebar.open {
+    width: 250px;
+  }
+
+  .sidebar .logo-details,
+  .sidebar .nav-links,
+  .sidebar .profile-details {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .sidebar.open .logo-details,
+  .sidebar.open .nav-links,
+  .sidebar.open .profile-details {
+    opacity: 1;
+    pointer-events: auto;
+    align-items: end;
+  }
+
+  .home-section {
+    width: 100%;
+    left: 0;
+    transition: all 0.5s ease;
+  }
+
+  /* Botão de menu hambúrguer */
+  .menu-toggle {
+    display: flex;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1100;
+    background: #05570D;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .menu-toggle i {
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .sidebar.open ~ .home-section {
+    filter: brightness(0.7);
+    pointer-events: none;
+  }
+}
