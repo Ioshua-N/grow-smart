@@ -1,156 +1,143 @@
-.main 
-{
-    display: flex;
+.main {
+  display: flex;
 
-    height: 100vh;
-    width: calc(100vw - 78px - 3%);
-  
-    margin-left: calc(78px + 3%);
-  
-    padding: 25px 25px 25px 0;
-  
-    gap: 20px;
+  width: calc(100vw - 78px - 3%);
 
-    box-sizing: border-box;
+  margin-left: calc(78px + 3%);
+
+  padding: 25px 25px 25px 0;
+
+  gap: 20px;
+
+  box-sizing: border-box;
 }
 
-.class-title
-{
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 40px;
+.class-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 40px;
 }
 
-.left-section
-{
-    width: 75%;
-    height: 100%;
+.left-section {
+  width: 75%;
+  height: 100%;
 
-    color:#05570d;
+  color: #05570d;
 }
 
-.top-bar
-{
-    display: flex;
+.top-bar {
+  display: flex;
 
-    width: 100%;
-    height: 50px;
+  width: 100%;
+  height: 50px;
 
-    align-items: center;
+  align-items: center;
+
+  margin-bottom: 10px;
 }
 
-.title
-{
-    font-weight: 700;
-    font-size: 25px;
+.title {
+  font-weight: 700;
+  font-size: 25px;
 }
 
-.a
-{
-    display: flex;
-    
-    padding: 5px;
-    margin-right: 20px;
+.a {
+  display: flex;
 
-    width: 100px;
-    height: 100%;
+  padding: 5px;
+  margin-right: 20px;
 
-    align-items: center;
+  width: 100px;
+  height: 100%;
+
+  align-items: center;
 }
 
-.back-btn
-{
-    height: 100%;
-    width: 100%;
+.back-btn {
+  height: 100%;
+  width: 100%;
 
-    background: #05570d;
+  background: #05570d;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    border-radius: 10px;
+  border-radius: 10px;
 
-    color: white;
+  color: white;
 }
 
-.back-btn:hover
-{
-    opacity: 0.9;
+.back-btn:hover {
+  opacity: 0.9;
 }
 
-.video
-{
-    width: 100%;
-    height: 75%;
+.video {
+  width: 100%;
+  height: 75vh;
 }
 
-.right-section
-{
-    height: calc(100% - 50px);
-    width: 25%;
+.right-section {
+  height: calc(100% - 60px);
+  width: 25%;
 
-    margin-top: 50px;
+  margin-top: 60px;
 }
 
-.search-bar
-{
-    width: 100%;
-    height: 50px;
+.search-bar {
+  width: 100%;
+  height: 50px;
 
-    padding: 10px 15px 10px 10px;
+  padding: 10px 15px 10px 10px;
 }
 
-.modulo
-{
-    display: flex;
+.modulo {
+  display: flex;
 
-    background-color: #05570d;
+  background-color: #05570d;
 
-    padding: 10px 15px;
+  padding: 10px 15px;
 
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-.modulo .title
-{
-    color: white
+.modulo .title {
+  color: white
 }
 
-.status
-{
-    display: flex;
+.status {
+  display: flex;
 
-    margin-right: 10px;
+  margin-right: 10px;
 
-    align-items: center;
+  align-items: center;
 
-    color: white;
+  color: white;
 }
 
-.title, .time
-{
-    color:white;
+.title,
+.time {
+  color: white;
 }
 
-.title
-{
-    color: #05570d;
-    font-size: 20px;
+.title {
+  color: #05570d;
+  font-size: 30px;
 }
 
-.time
-{
-    font-size: 15px;
+.time {
+  font-size: 15px;
 }
 
-.modulo:hover
-{
-    opacity: 0.8;
+.modulo:hover {
+  opacity: 0.8;
 }
 
-@media (max-width: 768px) 
+.text-title
 {
-  .main
-  {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .main {
     flex-direction: column;
 
     width: 100%;
@@ -160,28 +147,26 @@
     padding: 15px 24px 24px 24px;
   }
 
-  .left-section
-  {
+  .left-section {
     width: 100%;
   }
 
-  .top-bar
-  {
+  .top-bar {
     flex-direction: row-reverse;
 
     margin-bottom: 10px;
   }
 
-  .title
-  {
+  .title {
     position: absolute;
+
+    font-size: 20px;
 
     left: 50%;
     transform: translateX(-50%);
   }
 
-  .a
-  {
+  .a {
     display: flex;
 
     align-items: center;
@@ -189,53 +174,70 @@
     margin: 0;
   }
 
-  .class-title
-  {
+  .class-title {
     font-size: 30px;
   }
 
-  .video
-  {
+  .video {
     display: flex;
     transform: translateX(-24px);
 
+    height: 300px;
     width: 100vw;
 
     margin-bottom: 10px;
   }
 
-  .right-section
-  {
+  .right-section {
     height: 150px;
-
     width: 100%;
+
+    margin: 0;
   }
 
-  .search-bar
-  {
+  .search-bar {
     display: none;
   }
 
-  .modulo
-  {
+  .modulo {
     align-items: center;
   }
 
-  .text
-  {
+  .text {
+    width: 100%;
+
+    display: flex;
+
+    margin-left: 10px;
     justify-content: space-between;
   }
 
-  .title
-  {
+  .title {
     display: flex;
 
-    font-size: 16px;
+    font-size: 22px;
   }
 
-  .status
-  {
+  .status {
     margin: 0;
-    margin-left: 15px;
+  }
+
+  .a
+  {
+    position: relative;
+
+    justify-content: end;
+
+    left: 0;
+  }
+
+  .back-btn
+  {
+    width: 70%;
+
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
   }
 }
