@@ -367,6 +367,7 @@
 
     .carouselHome {
         height: 100%;
+        width: 90%;
         display: flex;
         justify-content: center;
         margin-top: 7%;
