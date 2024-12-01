@@ -365,7 +365,7 @@ a
 .menu-toggle{
   display: none;
 }
-/* CSS Responsivo */
+
 @media (max-width: 768px) {
   .sidebar {
     width: 0;
