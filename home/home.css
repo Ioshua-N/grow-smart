@@ -273,7 +273,7 @@
     margin-left: 10px;
 }
 
-.carouselHome{
+.carouselHome {
     height: 100%;
     width: 458px;
     display: flex;
@@ -281,8 +281,7 @@
     margin-top: 7%;
 }
 
-.logo-icon
-{
+.logo-icon {
     display: flex;
 
     width: 40px;
@@ -307,17 +306,17 @@
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    .TopHome{
+    .TopHome {
         flex-direction: column;
     }
 
-    .MidMenu{
+    .MidMenu {
         flex-direction: column-reverse;
     }
 
-    .premium{
+    .premium {
         display: none;
     }
 
@@ -334,7 +333,7 @@
         background-color: #F5F5F7;
     }
 
-    .TopRight{
+    .TopRight {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -361,7 +360,7 @@
         font-size: 15px;
     }
 
-    .cursoProgresso{
+    .cursoProgresso {
         margin-right: 0%;
     }
 
@@ -371,6 +370,26 @@
         display: flex;
         justify-content: center;
         margin-top: 7%;
+    }
+
+    .panel {
+        border-radius: 15px 15px 15px 15px;
+        width: 100%;
+        display: none;
+        padding: 20px 30px 30px;
+        background: #fff;
+        border-color: #ffffff;
+        border: solid;
+        border-width: 0.1px;
+    }
+
+    .tabs {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 570px;
+        background: #ffffff; 
+        box-shadow: 0 48px 80px -32px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
     }
 
 }
