@@ -32,10 +32,15 @@ body {
 
     .wrapper
     {
-        margin-top: 35%;
         max-width: none !important;
         width: 100vw;
-        border-radius: 20px 20px 0 0 !important;
+    }
+
+    .wrapper .title {
+        width: 45%!important;
+        font-weight: 600;
+        text-align: center;
+        transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 }
 
@@ -247,4 +252,5 @@ form .btn input[type="submit"] {
     width: 90px;
     height: 90px;
     border-radius: 20px;
+    z-index: 1000;
 }
