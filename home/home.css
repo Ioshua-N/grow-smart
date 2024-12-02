@@ -7,7 +7,6 @@
     flex-direction: column;
 }
 
-
 .cardWelcome {
     display: flex;
     justify-content: space-evenly;
@@ -311,6 +310,11 @@
 
     .TopHome {
         flex-direction: column;
+    }
+
+    .SubtitloCursos
+    {
+        display: none;
     }
 
     .MidMenu {
