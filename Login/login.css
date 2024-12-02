@@ -15,7 +15,7 @@ body {
     height: 100%;
     width: 100%;
     place-items: center;
-    background: #00563B;
+    background: #05570D;
     ;
 }
 
@@ -27,12 +27,12 @@ body {
         height: 100%;
         width: 100%;
         place-items: normal; 
-        background: #00563B;
+        background: #05570D;
     }
 }
 
 ::selection {
-    background: #00563B;
+    background: #05570D;
     color: #fff;
 }
 
@@ -94,7 +94,7 @@ body {
     left: 0;
     z-index: 0;
     border-radius: 5px;
-    background: #00563B;
+    background: #05570D;
     transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -159,7 +159,7 @@ input[type="radio"] {
 }
 
 .form-inner form .field input:focus {
-    border-color: #00563B;
+    border-color: #05570D;
     /* box-shadow: inset 0 0 3px #fb6aae; */
 }
 
@@ -183,7 +183,7 @@ form .field input:focus::placeholder {
 
 .form-inner form .pass-link a,
 .form-inner form .signup-link a {
-    color: #00563B;
+    color: #05570D;
     text-decoration: none;
 }
 
@@ -205,7 +205,7 @@ form .btn .btn-layer {
     width: 300%;
     position: absolute;
     left: -100%;
-    background: #00563B;
+    background: #05570D;
     border-radius: 5px;
     transition: all 0.4s ease;
     ;
@@ -228,4 +228,10 @@ form .btn input[type="submit"] {
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
+}
+
+.logo, .logo img {
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
 }
